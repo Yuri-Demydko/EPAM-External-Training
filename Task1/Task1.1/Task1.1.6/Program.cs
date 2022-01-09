@@ -14,18 +14,17 @@ namespace Task1._1._6
             {"Underlined", false}
         };
         
-        private static void GetStyles()
+        private static string GetStyles()
         {
             var res = _styles.Keys.Where(style => _styles[style])
                 .Aggregate("", (current, style) => current + style + "\n");
             res = string.IsNullOrWhiteSpace(res) ? "None" : res;
-            Console.WriteLine(res);
+            return res;
         }
 
         private static void SetStyle(string arg)
         {
-            try
-            {
+            
                 switch (arg[0])
                 {
                     case '+':
@@ -41,14 +40,10 @@ namespace Task1._1._6
                         break;
                     }
                     default:
-                        throw new Exception();
+                        throw new ArgumentException();
 
                 }
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("Wrong input!");
-            }
+            
         }
         static void Main(string[] args)
         {
@@ -61,7 +56,7 @@ namespace Task1._1._6
                 {
                     case "1":
                     {
-                        GetStyles();
+                        Console.WriteLine(GetStyles());
                         break;
                     }
                     case "2":
@@ -69,7 +64,14 @@ namespace Task1._1._6
                         Console.WriteLine("Choose style:\n\'1\' - Bold\n\'2\' - Italic\n\'3\' - Underlined" +
                                           "\nWrite \'+\'[number] to add style, \'-\'[number] to remove style");
                         var input = Console.ReadLine();
-                        SetStyle(input);
+                        try
+                        {
+                         SetStyle(input);
+                        }
+                        catch (ArgumentException)
+                        {
+                            Console.WriteLine("Wrong input!");
+                        }
                         break;
                     }
                     default:

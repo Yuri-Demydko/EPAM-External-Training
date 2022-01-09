@@ -16,8 +16,9 @@ namespace Task1._1._9
         
         static void Main(string[] args)
         {
-            var arr = GetRandomArray(10);
-            Console.WriteLine(GetSumOfNonNegativesInArray(arr));
+            Console.Write("Enter length of random array which will be generated: ");
+            var arr = GetRandomArray(Convert.ToInt32(Console.ReadLine()));
+            Console.WriteLine($"Here is sum of a non-negative numbers in that array: {GetSumOfNonNegativesInArray(arr)}");
         }
     }
 }

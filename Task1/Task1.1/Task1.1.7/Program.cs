@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text;
 
 namespace Task1._1._7
 {
@@ -17,13 +18,16 @@ namespace Task1._1._7
             return res;
         }
 
-        private static void WriteArray(int[] array)
+        private static string StringifyArray(int[] array,char splitter)
         {
+            var sb = new StringBuilder();
             foreach (var i in array)
             {
-                Console.Write(i+" ");
+                sb.Append($"{i}{splitter}");
             }
-            Console.WriteLine();
+
+            sb.Append(Environment.NewLine);
+            return sb.ToString();
         }
 
         private static void SortArray(ref int[] array)
@@ -33,9 +37,7 @@ namespace Task1._1._7
                 for (var j = 0; j < array.Length-1; j++)
                     if (array[j] > array[j + 1])
                     {
-                        var tmp = array[j];
-                        array[j] = array[j + 1];
-                        array[j + 1] = tmp;
+                        (array[j], array[j + 1]) = (array[j + 1], array[j]);
                     }
             }
         }
@@ -54,13 +56,15 @@ namespace Task1._1._7
         }
         static void Main(string[] args)
         {
+            Console.WriteLine("Press any key to generate, sort random array and find minimum and maximum number of it!");
+            Console.ReadKey();
             var arr= GetRandomArray(10); 
             Console.WriteLine("Original array:");
-            WriteArray(arr);
+            Console.WriteLine(StringifyArray(arr,' '));
            
            SortArray(ref arr);
            Console.WriteLine("Sorted array:");
-           WriteArray(arr);
+           Console.WriteLine(StringifyArray(arr,' '));
            var (min, max) = GetMinMaxValues(arr);
            Console.WriteLine($"Minimum: {min}\nMaximum: {max}");
         }

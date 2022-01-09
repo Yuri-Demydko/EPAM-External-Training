@@ -13,8 +13,10 @@ namespace Task1._2._3
 
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter any string to calculate words starting with lowercase characters in it:");
+            var str = Console.ReadLine();
             Console.WriteLine("Count of words starting with lowercase characters: " +
-                              $"{CountLowercaseStartingWords(Console.ReadLine())}");
+                              $"{CountLowercaseStartingWords(str)}");
         }
     }
 }

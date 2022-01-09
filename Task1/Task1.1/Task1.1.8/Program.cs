@@ -23,8 +23,11 @@ namespace Task1._1._8
         }
         static void Main(string[] args)
         {
+            Console.WriteLine("Press any key to generate random 3D array and replace any positive numbers in it with 0!");
+            Console.ReadKey();
             var arr3d = GetRandom3DArray(5, 5, 5);
             Make3DArrayNoPositive(ref arr3d);
+            Console.WriteLine("Done! (somewhere in heap...)");
             
         }
     }

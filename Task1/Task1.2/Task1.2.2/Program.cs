@@ -13,7 +13,11 @@ namespace Task1._2._2
         }
         static void Main(string[] args)
         {
-            Console.WriteLine(DoubleFirstSymbols(Console.ReadLine(),Console.ReadLine()));
+            Console.WriteLine("Enter any string:");
+            var s1 = Console.ReadLine();
+            Console.WriteLine("Enter string, containing symbols which will be doubled in first string:");
+            var s2 = Console.ReadLine();
+            Console.WriteLine($"Done! Your result:{Environment.NewLine}{DoubleFirstSymbols(s1,s2)}");
         }
     }
 }

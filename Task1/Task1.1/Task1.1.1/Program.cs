@@ -5,12 +5,15 @@ namespace Task1._1._1
 {
     class Program
     {
+        public static int CalculateArea(int len, int wid) => len * wid;
+        public static int ReadPositiveInt(string str) => Math.Abs(Convert.ToInt32(str));
         static void Main(string[] args)
         {
-            var len = Convert.ToInt32(Console.ReadLine());
-            var wid = Convert.ToInt32(Console.ReadLine());
-            if (len <= 0 || wid <= 0) throw new ArithmeticException("Length and Width must be greater than 0!");
-            Console.WriteLine($"Area of that rectangle: {len*wid}");
+            Console.Write("Enter length: ");
+            var len = ReadPositiveInt(Console.ReadLine());
+            Console.Write("Enter width: ");
+            var wid = ReadPositiveInt(Console.ReadLine());
+            Console.WriteLine($"Area of that rectangle: {CalculateArea(len,wid)}");
         }
     }
 }

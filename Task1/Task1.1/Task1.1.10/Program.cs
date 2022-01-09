@@ -26,8 +26,9 @@ namespace Task1._1._10
         }
         static void Main(string[] args)
         {
-            var arr = GetRandom2DArray(5, 5);
-            Console.WriteLine($"Sum of elements of even positions: {GetSumOfEvenPositionElements(arr)}");
+            Console.Write("Enter two positive numbers to generate 2D array: ");
+            var arr = GetRandom2DArray(Convert.ToInt32(Console.Read()), Convert.ToInt32(Console.Read()));
+            Console.WriteLine($"Sum of elements of that array standing at even positions: {GetSumOfEvenPositionElements(arr)}");
         }
     }
 }
