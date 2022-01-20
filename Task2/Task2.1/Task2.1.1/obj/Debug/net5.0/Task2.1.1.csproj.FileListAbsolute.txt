@@ -1,0 +1,12 @@
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/Task2.1.1/bin/Debug/net5.0/Task2.1.1.deps.json
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/Task2.1.1/bin/Debug/net5.0/Task2.1.1.dll
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/Task2.1.1/bin/Debug/net5.0/ref/Task2.1.1.dll
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/Task2.1.1/bin/Debug/net5.0/Task2.1.1.pdb
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/Task2.1.1/obj/Debug/net5.0/Task2.1.1.csproj.AssemblyReference.cache
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/Task2.1.1/obj/Debug/net5.0/Task2.1.1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/Task2.1.1/obj/Debug/net5.0/Task2.1.1.AssemblyInfoInputs.cache
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/Task2.1.1/obj/Debug/net5.0/Task2.1.1.AssemblyInfo.cs
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/Task2.1.1/obj/Debug/net5.0/Task2.1.1.csproj.CoreCompileInputs.cache
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/Task2.1.1/obj/Debug/net5.0/Task2.1.1.dll
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/Task2.1.1/obj/Debug/net5.0/ref/Task2.1.1.dll
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/Task2.1.1/obj/Debug/net5.0/Task2.1.1.pdb
