@@ -1,0 +1,12 @@
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/YGeometry/obj/Debug/net5.0/YGeometry.csproj.AssemblyReference.cache
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/YGeometry/obj/Debug/net5.0/YGeometry.GeneratedMSBuildEditorConfig.editorconfig
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/YGeometry/obj/Debug/net5.0/YGeometry.AssemblyInfoInputs.cache
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/YGeometry/obj/Debug/net5.0/YGeometry.AssemblyInfo.cs
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/YGeometry/obj/Debug/net5.0/YGeometry.csproj.CoreCompileInputs.cache
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/YGeometry/bin/Debug/net5.0/YGeometry.deps.json
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/YGeometry/bin/Debug/net5.0/YGeometry.dll
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/YGeometry/bin/Debug/net5.0/ref/YGeometry.dll
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/YGeometry/bin/Debug/net5.0/YGeometry.pdb
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/YGeometry/obj/Debug/net5.0/YGeometry.dll
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/YGeometry/obj/Debug/net5.0/ref/YGeometry.dll
+/Users/demydkourij/Projects/EPAM-External-Training/Task2/Task2.1/YGeometry/obj/Debug/net5.0/YGeometry.pdb
