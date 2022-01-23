@@ -6,29 +6,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7807fb1f-174e-4e66-b3c2-7e1d1bc67be7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.vscode/launch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.vscode/tasks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Task1/Task1.1/Task1.1.1/bin/Debug/net5.0/Task1.1.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Task1/Task1.1/Task1.1.10/obj/Debug/net5.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Task1/Task1.1/Task1.1.3/obj/Debug/net5.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Task1/Task1.1/Task1.1.4/obj/Debug/net5.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Task1/Task1.1/Task1.1.5/obj/Debug/net5.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Task1/Task1.1/Task1.1.6/obj/Debug/net5.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Task1/Task1.1/Task1.1.7/obj/Debug/net5.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Task1/Task1.1/Task1.1.8/obj/Debug/net5.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Task1/Task1.1/Task1.1.9/obj/Debug/net5.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Task1/Task1.2/Task1.2.1/obj/Debug/net5.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Task1/Task1.2/Task1.2.2/obj/Debug/net5.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Task1/Task1.2/Task1.2.3/obj/Debug/net5.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Task1/Task1.2/Task1.2.4/obj/Debug/net5.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Task2.1/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Task2.1/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Task2.1/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task2.1.1/Task2.1.1.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task2.1.2/Task2.1.2.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task2.1.2/bin/Debug/net5.0/Task2.1.2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task2.1.2/bin/Debug/net5.0/Task2.1.2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task2.1.2/ConsoleShapeCreationHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Task2.1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Task2.1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StartupProject/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StartupProject/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task2.1.2/Circle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Task2.1.2/Circle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task2.1.2/Circumference.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Task2.1.2/Circumference.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task2.1.2/CustomPaint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Task2.1.2/CustomPaint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task2.1.2/CustomPaintsHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Task2.1.2/CustomPaintsHub.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task2.1.2/Line.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Task2.1.2/Line.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task2.1.2/Point.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Task2.1.2/Point.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task2.1.2/RectBasedShape.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Task2.1.2/RectBasedShape.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task2.1.2/Rectangle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Task2.1.2/Rectangle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task2.1.2/Ring.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Task2.1.2/Ring.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task2.1.2/RoundBasedShape.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Task2.1.2/RoundBasedShape.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task2.1.2/Shape.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Task2.1.2/Shape.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task2.1.2/Square.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Task2.1.2/Square.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task2.1.2/Triangle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Task2.1.2/Triangle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task2.1.2/bin/Debug/net5.0/Task2.1.2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Task2.1.2/bin/Debug/net5.0/Task2.1.2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task2.1.2/bin/Debug/net5.0/Task2.1.2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Task2.1.2/bin/Debug/net5.0/Task2.1.2.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,15 +39,15 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Task2.1.2/CustomPaintsHub.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Task2.1.2/CustomPaint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Task2.1.2/Line.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Task2.1.2/CustomPaint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Task2.1.2/CustomPaintsHub.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="23m7gfZ2UcLQ27qY0N5pdEz7h7h" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -122,6 +117,7 @@
       <workItem from="1642327524232" duration="23851000" />
       <workItem from="1642439743733" duration="12739000" />
       <workItem from="1642497469736" duration="982000" />
+      <workItem from="1642934415504" duration="5652000" />
     </task>
     <servers />
   </component>

@@ -8,7 +8,7 @@ namespace StartupProject
     {
         static void Main(string[] args)
         {
-            CustomPaintsHub.Run();
+            new CustomPaintsHub(new ConsoleShapeCreationHelper()).Run();
         }
     }
 }

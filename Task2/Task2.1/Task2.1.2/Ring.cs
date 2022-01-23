@@ -1,4 +1,7 @@
 using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 namespace YGeometry
 {
@@ -19,15 +22,17 @@ namespace YGeometry
         public double Area => Math.PI * Math.Pow(Radius - InnerLength, 2);
     
         public double InnerRadius => _innerRadius;
-
-        public Ring() : base()
-        {
-            Console.WriteLine($"Enter inner radius of {GetType().Name}");
-            this._innerRadius = Convert.ToDouble(Console.ReadLine());
-        }
+        
         public override string ToString()
         {
             return base.ToString()+$"\nInner radius: {InnerRadius}\nArea: {Area}";
+        }
+
+        public override IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        {
+            var res= base.Validate(validationContext).ToList();
+            if (_innerRadius <= 0) res.Add(new ValidationResult("Inner radius must be positive number!"));
+            return res;
         }
     }
 }

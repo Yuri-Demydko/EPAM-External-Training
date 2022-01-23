@@ -12,11 +12,7 @@ namespace YGeometry
         }
 
         protected override int SuitablePointsNumber => 2;
-
-        public Line():base()
-        {
-            
-        }
+        
 
         public override string ToString()
         {

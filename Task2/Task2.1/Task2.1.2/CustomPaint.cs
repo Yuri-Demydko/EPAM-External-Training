@@ -21,9 +21,9 @@ namespace YGeometry
             return new CustomPaint(Console.ReadLine());
         }
 
-        public void AddShape<T>() where T: Shape, new()
+        public void AddShape<T>(ShapeCreationHelper helper) where T: Shape
         {
-            _shapes.Add(new T());
+            _shapes.Add(helper.CreateShape<T>());
         }
         
        public void DrawShapes() => _shapes.ForEach(s=>Console.WriteLine($"{s}\n{new string('-',s.ToString().Split("\n").Last().Length)}"));

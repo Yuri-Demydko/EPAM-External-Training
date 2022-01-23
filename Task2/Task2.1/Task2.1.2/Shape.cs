@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
@@ -9,7 +10,7 @@ using System.Text;
 
 namespace YGeometry
 {
-    public abstract class Shape
+    public abstract class Shape: IValidatableObject
     {
         public abstract double TotalLength { get; } //aka Perimeter in RectBasedShapes or Triangles
         
@@ -22,11 +23,7 @@ namespace YGeometry
                 throw new TargetParameterCountException($"Suitable number of points for that shape: {SuitablePointsNumber}, you passed: {points.Length}");
             this.points = points.Take(SuitablePointsNumber);
         }
-
-        protected Shape()
-        {
-            this.points = Point.CreateFromConsole(SuitablePointsNumber);
-        }
+        
         
         public override string ToString()
         {
@@ -34,6 +31,10 @@ namespace YGeometry
                       $"@@: {TotalLength}";
             return res;
         }
-        
+
+        public virtual IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        {
+            return new List<ValidationResult>();
+        }
     }
 }

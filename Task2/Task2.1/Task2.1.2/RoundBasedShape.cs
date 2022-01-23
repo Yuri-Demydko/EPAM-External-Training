@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
 namespace YGeometry
@@ -22,10 +24,11 @@ namespace YGeometry
             this._radius = radius;
         }
 
-        protected RoundBasedShape():base()
+        public override IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
-            Console.Write($"Enter radius: ");
-            this._radius = Convert.ToDouble(Console.ReadLine());
+            var res= base.Validate(validationContext).ToList();
+            if (_radius <= 0) res.Add(new ValidationResult("Radius must be positive number!"));
+            return res;
         }
     }
 }

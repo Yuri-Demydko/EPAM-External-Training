@@ -5,27 +5,34 @@ using System.Linq;
 
 namespace YGeometry
 {
-    public static class CustomPaintsHub
+    public class CustomPaintsHub
     {
         private static readonly IList<CustomPaint> CustomPaints=new List<CustomPaint>();
 
         private static CustomPaint _currentPaint;
 
-        private static void CreateNewPaint()
+        private ShapeCreationHelper _helper;
+
+        public CustomPaintsHub(ShapeCreationHelper helper)
+        {
+            _helper = helper;
+        }
+
+        private void CreateNewPaint()
         {
             var paint = CustomPaint.InitCustomPaint();
             CustomPaints.Add(paint);
             _currentPaint = paint;
         }
 
-        private static void SwitchUser(string uname)
+        private void SwitchUser(string uname)
         {
             _currentPaint = CustomPaints.FirstOrDefault(p => p.UserName == uname)
                        ??
                        throw new ArgumentException("Paint with such username doesn't exist!");
         }
 
-        public static void Run()
+        public void Run()
         {
             if(_currentPaint==null)
                 CreateNewPaint();
@@ -60,25 +67,25 @@ namespace YGeometry
                             switch (Console.ReadLine())
                             {
                                 case "1":
-                                    _currentPaint.AddShape<Circle>();
+                                    _currentPaint.AddShape<Circle>(_helper);
                                     break;
                                 case "2":
-                                    _currentPaint.AddShape<Circumference>();
+                                    _currentPaint.AddShape<Circumference>(_helper);
                                     break;
                                 case "3":
-                                    _currentPaint.AddShape<Ring>();
+                                    _currentPaint.AddShape<Ring>(_helper);
                                     break;
                                 case "4":
-                                    _currentPaint.AddShape<Line>();
+                                    _currentPaint.AddShape<Line>(_helper);
                                     break;
                                 case "5":
-                                    _currentPaint.AddShape<Triangle>();
+                                    _currentPaint.AddShape<Triangle>(_helper);
                                     break;
                                 case "6":
-                                    _currentPaint.AddShape<Rectangle>();
+                                    _currentPaint.AddShape<Rectangle>(_helper);
                                     break;
                                 case "7":
-                                    _currentPaint.AddShape<Square>();
+                                    _currentPaint.AddShape<Square>(_helper);
                                     break;
                                 default:
                                     Console.WriteLine("Invalid input!");
@@ -87,7 +94,7 @@ namespace YGeometry
                         }
                         catch (Exception e)
                         {
-                            Console.WriteLine("Invalid input!");
+                            Console.WriteLine(e.Message);
                         }
                         break;
                     }

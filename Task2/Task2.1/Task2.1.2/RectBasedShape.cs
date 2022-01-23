@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
 namespace YGeometry
@@ -25,9 +28,19 @@ namespace YGeometry
             
         }
 
-        protected RectBasedShape():base()
+        public override IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
-            
+            var res= base.Validate(validationContext).ToList();
+
+            var sideA = points.ElementAt(0).DistanceTo(points.ElementAt(1));
+            var sideB = points.ElementAt(1).DistanceTo(points.ElementAt(2));
+            var sideC = points.ElementAt(2).DistanceTo(points.ElementAt(3));
+            var sideD = points.ElementAt(3).DistanceTo(points.ElementAt(0));
+            var hipo = points.ElementAt(0).DistanceTo(points.ElementAt(2));
+            if(sideA!=sideC||sideB!=sideD) res.Add(new ValidationResult("Invalid sides length!"));
+            if(Math.Sqrt(Math.Pow(sideA,2)+Math.Pow(sideB,2))!=hipo)
+                res.Add(new ValidationResult($"Invalid angle (!=90 deg)! {hipo}!={Math.Pow(sideA,2)+Math.Pow(sideB,2)}"));
+            return res;
         }
 
         public override string ToString()

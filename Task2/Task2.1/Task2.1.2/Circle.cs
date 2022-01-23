@@ -7,10 +7,7 @@ namespace YGeometry
         public Circle(Point center, double radius) : base(center, radius)
         {
         }
-
-        public Circle():base()
-        {
-        }
+        
 
         public double Area => Math.Pow(Math.PI * Radius, 2);
         public override string ToString()

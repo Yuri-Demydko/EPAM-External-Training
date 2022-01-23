@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
 namespace YGeometry
@@ -28,11 +30,19 @@ namespace YGeometry
         {
         }
 
-        public Triangle():base()
+        public override IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
-            
+            var res= base.Validate(validationContext).ToList();
+            var sideA = points.ElementAt(0).DistanceTo(points.ElementAt(1));
+            var sideB = points.ElementAt(1).DistanceTo(points.ElementAt(2));
+            var sideC = points.ElementAt(0).DistanceTo(points.ElementAt(2));
+            if(sideC>sideA+sideB||
+               sideB>sideA+sideC ||
+               sideA>sideB+sideC)
+                res.Add(new ValidationResult("Wrong sides length!"));
+            return res;
         }
-        
+
         public override string ToString()
         {
             return base.ToString().Replace("@@","Perimeter")+$"\nArea: {Area}";
